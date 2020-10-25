@@ -22,7 +22,7 @@ public class AssociadoService {
 
     private final static String CPF_VALIDO = "true";
 
-    static Logger logger = LoggerFactory.getLogger(com.cwi.demo.service.AssociadoService.class);
+    static Logger logger = LoggerFactory.getLogger(com.demo.sicredi.service.AssociadoService.class);
 
     public Associado save(Associado associado) {
         return associadoDAO.save(associado);
