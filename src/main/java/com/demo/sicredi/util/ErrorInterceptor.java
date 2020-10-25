@@ -5,7 +5,9 @@ import org.aspectj.lang.annotation.Aspect;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
+/**
+ * Created by maiquelknechtel on 25/10/20.
+ */
 @Aspect
 public class ErrorInterceptor{
     private static Logger logger = Logger.getLogger("com.cwi.demo.service");
