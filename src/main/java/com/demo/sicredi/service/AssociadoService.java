@@ -13,7 +13,9 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 
 import java.io.IOException;
-
+/**
+ * Created by maiquelknechtel on 25/10/20.
+ */
 @Service
 public class AssociadoService {
 

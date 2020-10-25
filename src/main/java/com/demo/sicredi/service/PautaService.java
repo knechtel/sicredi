@@ -4,7 +4,9 @@ import com.demo.sicredi.DAO.PautaDAO;
 import com.demo.sicredi.domain.Pauta;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
+/**
+ * Created by maiquelknechtel on 25/10/20.
+ */
 @Service
 public class PautaService {
 

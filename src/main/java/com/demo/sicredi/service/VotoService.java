@@ -7,7 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+/**
+ * Created by maiquelknechtel on 25/10/20.
+ */
 @Service
 public class VotoService {
 
