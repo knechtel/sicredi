@@ -15,7 +15,9 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+/**
+ * Created by maiquelknechtel on 25/10/20.
+ */
 @RestController
 @RequestMapping("/api/voto")
 public class VotoController {
