@@ -1,14 +1,15 @@
-package com.cwi.demo.controller;
+package com.demo.sicredi.controller;
 
-import com.cwi.demo.DTO.VotoDTO;
-import com.cwi.demo.DTO.VotoFormDTO;
-import com.cwi.demo.bean.Associado;
-import com.cwi.demo.bean.Pauta;
-import com.cwi.demo.bean.Voto;
-import com.cwi.demo.service.AssociadoService;
-import com.cwi.demo.service.PautaService;
-import com.cwi.demo.service.VotoService;
-import com.cwi.demo.util.Util;
+
+import com.demo.sicredi.DTO.VotoDTO;
+import com.demo.sicredi.DTO.VotoFormDTO;
+import com.demo.sicredi.domain.Associado;
+import com.demo.sicredi.domain.Pauta;
+import com.demo.sicredi.domain.Voto;
+import com.demo.sicredi.service.AssociadoService;
+import com.demo.sicredi.service.PautaService;
+import com.demo.sicredi.service.VotoService;
+import com.demo.sicredi.util.Util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;

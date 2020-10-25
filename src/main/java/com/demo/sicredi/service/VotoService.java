@@ -1,8 +1,8 @@
 package com.demo.sicredi.service;
 
-import com.cwi.demo.DAO.VotoDAO;
-import com.cwi.demo.DTO.VotoDTO;
-import com.cwi.demo.bean.Voto;
+import com.demo.sicredi.DAO.VotoDAO;
+import com.demo.sicredi.DTO.VotoDTO;
+import com.demo.sicredi.domain.Voto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
