@@ -49,7 +49,7 @@ public class AssociadoService {
             else
                 retorno = false;
         } catch (IOException e) {
-            logger.error("ERRO .",e);
+           e.printStackTrace();
         } finally {
             return retorno;
         }
