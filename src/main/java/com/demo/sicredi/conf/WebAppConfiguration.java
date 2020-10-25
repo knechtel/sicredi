@@ -1,4 +1,4 @@
-package com.cwi.demo.conf;
+package com.demo.sicredi.conf;
 
 
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
