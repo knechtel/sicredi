@@ -13,6 +13,8 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 
 import java.io.IOException;
+import java.util.List;
+
 /**
  * Created by maiquelknechtel on 25/10/20.
  */
@@ -29,8 +31,6 @@ public class AssociadoService {
     public Associado save(Associado associado) {
         return associadoDAO.save(associado);
     }
-
-
 
     public boolean validaCPF(AssociadoDTO associadoDTO) {
         boolean retorno = false;
@@ -55,6 +55,9 @@ public class AssociadoService {
         }
     }
 
+    public Iterable<Associado> findAll() {
+        return associadoDAO.findAll();
+    }
 
     public Associado findById(Integer id) {
         return associadoDAO.findById(id).orElse(null);

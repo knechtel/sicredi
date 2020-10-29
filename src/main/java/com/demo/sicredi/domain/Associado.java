@@ -13,7 +13,7 @@ public class Associado implements Serializable {
     private Integer id;
     private String nome;
     private String cpf;
-    @OneToMany(mappedBy = "associado")
+    @OneToMany()
     private List<Voto> listVoto;
 
     public Integer getId() {

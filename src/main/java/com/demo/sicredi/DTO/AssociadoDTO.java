@@ -6,6 +6,7 @@ import com.demo.sicredi.domain.Associado;
  */
 public class AssociadoDTO {
 
+    private Integer id;
     private String nome;
     private String cpf;
 
@@ -31,5 +32,13 @@ public class AssociadoDTO {
         a.setCpf(cpf);
         a.setNome(nome);
         return a;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }

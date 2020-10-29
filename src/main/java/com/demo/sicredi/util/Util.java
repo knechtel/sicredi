@@ -1,6 +1,9 @@
 package com.demo.sicredi.util;
 
+import com.demo.sicredi.DAO.VotoDAO;
 import com.demo.sicredi.domain.Pauta;
+import com.demo.sicredi.domain.Voto;
+import com.demo.sicredi.domain.VotoEnum;
 
 import java.util.ArrayList;
 import java.util.List;

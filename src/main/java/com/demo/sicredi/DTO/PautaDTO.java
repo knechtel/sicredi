@@ -6,6 +6,7 @@ import com.demo.sicredi.domain.Pauta;
  */
 public class PautaDTO {
 
+    private Integer id;
     private String texto ;
     private Integer second = 60;
 
@@ -30,5 +31,13 @@ public class PautaDTO {
         p.setTexto(pautaDTO.getTexto());
         p.setSecond(pautaDTO.getSecond());
         return p;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }

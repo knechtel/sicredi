@@ -3,6 +3,10 @@ package com.demo.sicredi;
 
 import java.time.LocalDateTime;
 
+import com.demo.sicredi.DAO.VotoDAO;
+import com.demo.sicredi.domain.Pauta;
+import com.demo.sicredi.util.Session;
+import com.demo.sicredi.util.Util;
 import org.quartz.JobBuilder;
 import org.quartz.JobDetail;
 import org.quartz.JobExecutionContext;
@@ -54,6 +58,9 @@ public class SicrediApplication extends QuartzJobBean {
 	@Autowired
 	public JobExplorer jobExplorer;
 
+	@Autowired
+	private VotoDAO votoDAO;
+
 	@Bean
 	public Trigger trigger() {
 		SimpleScheduleBuilder scheduleBuilder = SimpleScheduleBuilder
@@ -100,8 +107,15 @@ public class SicrediApplication extends QuartzJobBean {
 			public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
 				System.out.println("The run time is: " + LocalDateTime.now());
 				System.out.println("Espera 10 segundos.");
-				Thread.sleep(10000);
-				System.out.println("Finalizadoa.");
+				Session.setPossivelVotar(true);
+				Pauta p = Util.getListPauta().get(Util.getListPauta().size()-1);
+				Thread.sleep(p.getSecond()*1000);
+
+				p.setPossibleToVote(false);
+
+				//votoDAO.findClosePauta(p.getId());
+				Util.getListPauta().remove(p);
+				System.out.println("Finalizado.");
 				return RepeatStatus.FINISHED;
 			}
 		}).build();
